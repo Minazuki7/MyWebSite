@@ -1,89 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.15.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.15.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.15.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.15.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.15.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.15.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.15.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.15.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.15.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.15.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nour's Website</title>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <canvas id="bg"></canvas>   
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <main>
+
+      <header>
+        <h1>Nour Azouz</h1>
+        <p>🚀 Welcome to my website!</p>
+      </header>
+
+
+      <blockquote>
+        <p>I like making stuff and learning something new each day</p>
+      </blockquote>
+
+      <section>
+        <h2>📜 Who am I</h2>
+        <p>
+          Hello there, I'm Nour Azouz a Full-Stack Engineer from Tunisia, and that's where I am living right now. I created this website becasue it was fun to make also as a way for you to know me better 
+        </p>
+
+        <p>
+          I was always in love with everything related to tech,and programing carved the way for me to dive into this awsome galaxy with endless potiental. I'm always hungry and curious for more knowledge and challanges to improve not only my code but also my life vision    
+        </p>
+
+        <p>
+          Despite working as in Full-Stack right now, I'm really intressted in Data Engineer and machine learning I'm trying my best to learn more and dive deeper into this sea. so I will appricate if you have any knowledge that you share it with me.
+        </p>
+
+      </section>
+
+      <section class="light">
+        <h2>👩🏽‍🚀 Projects</h2>
+
+        <p>
+          Professional: BeeFOOD: A multilayered food-delivery app using NestJS and React , with a dedicated mobile Flutter app for drivers, with a food suggestion AI. 
+        </p>
+        <p>
+          Professional: A Dual language Windows desktop app that allow the managing of client using C# 
+        </p>
+        <p>
+          Academic: LittleDuckling: Interactive Social media(FullStack) focused on interaction between kindergartens and parents using Spring Framework for Back-end and Angular For the Front-end
+        </p>
+        <p>
+          Academic: SkyTravel: Desktop Application to mange a travel agency using C and Glade
+        </p>
+        <p>
+          Personal: Dawn Of Darkness : A Pocket Sized pixel game for windows using Unity and C++.
+        </p>
+
+        <h2>🏆 Hobbies</h2>
+
+        <p>
+          I'm someone who loves doing tons of things and trying all sort of stuff, I enjoy video game and I love watching anime, some other days I just want go out and do some sports, Football is my favourite, or just read some books or Mangas. I find humanity intriguing that's why i enjoy psychology and sociology but Math and physics are still my favourtie. I love every kind of art , even when I can only draw and used to make some music either in a guitar or a piano AND YES culinary arts are arts.
+        </p>
+
+      </section>
+
+      <blockquote>
+        <p>If there is a problem there will be a solution, if there is a solution there will a better one<br>-Me and probably someone else too</p>
+      </blockquote>
+
+      <section class="left">
+        <h2>💻 Work History</h2>
+
+        <h3>WEREACT</h3>
+        <p>
+          Where I'm working right now, and where I spent the majority of 2022 as in intern, Giving me the opportunity to make BeeFood in the context of my end of study project and learning countless lessons for each memeber of the team and seniors. I place not only where I learned to code but how to work in a team. 
+        </p>
+        <h3>3S</h3>
+        <p>
+         My first internship as a Software Engineer it helped me understand the field more and directed me to the right path 
+        </p>
+        <h3>FROID SERVICE PLUS</h3>
+        <p>
+          Where I started my first summer job, despite not being coding related, this job shaped me as who am I today, While making Cool Storage I learned not only how to manipulate tools and do the labor physical work, but understand a lot more and the cooling technology, elecrticity and much more.   
+        </p>
+
+      </section>
+      <section class="light">
+        <h2>📬 Contact</h2>
+
+        <h3>Mail</h3>
+        <h3>nourazouz7@gmail.com</h3>
+        <h3>LINKEDIN</h3>
+        <h3>https://www.linkedin.com/in/nour-az/</h3>
+        <h3>Phone</h3>
+        <h3>+216 29 24 65 24</h3>
+       
+
+      </section>
+
+      <blockquote>
+        <p>Thanks for being here!</p>
+      </blockquote>
+
+
+    </main>
+    
+    <script type="module" src="/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
