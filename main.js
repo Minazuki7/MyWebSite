@@ -1,7 +1,10 @@
 import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-
+import background from "./asstes/background.jpeg"
+import nour from "./asstes/me.png"
+import moontexture from "./asstes/moon.jpg"
+import normal from "./asstes/normal.jpg"
 // Setup
 
 const scene = new THREE.Scene();
@@ -60,9 +63,9 @@ Array(200).fill().forEach(addStar);
 
 // Background
  
-const spaceTexture = new THREE.TextureLoader().load('background.jpeg');
+const spaceTexture = new THREE.TextureLoader().load(background);
 scene.background = spaceTexture;
-const meTexture = new THREE.TextureLoader().load('me.png');
+const meTexture = new THREE.TextureLoader().load(nour);
 
 const me = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: meTexture }));
 
@@ -70,8 +73,8 @@ scene.add(me);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load(moontexture);
+const normalTexture = new THREE.TextureLoader().load(normal);
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
